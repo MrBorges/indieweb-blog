@@ -32,6 +32,7 @@ module.exports = {
         short_name: `ExBR`,
         start_url: `/`,
         background_color: `#111111`,
+        theme_color: `#111111`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
