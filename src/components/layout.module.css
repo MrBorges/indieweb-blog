@@ -1,30 +1,112 @@
+body{
+    background-color: #111;
+    margin: 0;
+    color: #eee;
+}
+
 .container{
     margin: auto;
-    max-width: 500px;
-    font-family: sans-serif;
+    max-width: 700px;
+    font-family: sans-serif;        
+}
+
+
+.site-top{    
+    position: relative;
+    width: 100%;
+    display: flex;    
+    margin-bottom: 3rem;
+}
+
+.top-right{
+    top: 0;
+    left: 2%;
+    margin: 0 auto;
+    width: 95%;
+    border-left: 3px solid turquoise;
+    border-right: 3px solid turquoise;
+    border-bottom: 3px solid turquoise;
+    height: 150px;
+    background-color: #111;
+    z-index: 3;
+}
+
+.top-left{
+    top: 0.4rem;   
+    margin: 0 auto;
+    left: 1%;
+    width: 95%;
+    border: 3px solid violet;
+    height: 150px;
+    position: absolute;
+    z-index: 2;
+    background-color: #333;
+}
+
+.top-displace{
+    top: 0.9rem;   
+    margin: 0 auto;
+    width: 95%;
+    
+    border: 3px solid yellow;
+    height: 150px;
+    position: absolute;
+    background-color: #666;
+    z-index: 1;
 }
 
 .heading{
-    color: rebeccapurple;
+    color: violet;    
 }
 
 .nav-links{
     display: flex;
+    justify-content: center;
     list-style: none;
     padding-left: 0;
+    font-weight: 600;
 }
 
 .nav-link-item{
     padding-right: 2rem;
+    text-align: center;
 }
 
 .nav-link-text{
-    color: black;
+    color: turquoise;
+    text-decoration: none;
+    border: 1px solid pink;
+    border-radius: 0px 5px 0px 5px;
+    padding: 4px;    
+
+    
 }
 
 .site-title{
     font-size: 3rem;
     color: gray;
     font-weight: 700;
-    margin: 3rem 0;
+    margin: 0 0 1rem 0;
+    font-family: "Baloo Bhaijaan 2";
+    text-align: center;
+	background: linear-gradient(to bottom, turquoise 0%, violet 70%);
+	-webkit-background-clip: text;
+    background-clip: text;
+	-webkit-text-fill-color: transparent;	
+    
+}
+
+.post-title{
+    margin-bottom: 0.5rem;
+}
+
+
+main{
+    width: 98%;
+    margin-bottom: 3rem;
+}
+
+a{
+    color: deepskyblue;
+    text-decoration: none;
 }

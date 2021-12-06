@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `MrBorges Webcorner`,
+    title: `ExperimentalistBR`,
     description: `Dad, free thinker, humanist, lover of pizza and beer. Writes code.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    author: `experimentalistBR`,
+    siteUrl: `https://experimentalistbr.netlify.app/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
