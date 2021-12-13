@@ -46,8 +46,7 @@ body{
 .top-displace{
     top: 0.9rem;   
     margin: 0 auto;
-    width: 95%;
-    
+    width: 95%;    
     border: 3px solid yellow;
     height: 150px;
     position: absolute;
@@ -83,7 +82,7 @@ body{
 }
 
 .site-title{
-    font-size: 3rem;
+    font-size: 3.5vw;
     color: gray;
     font-weight: 700;
     margin: 0 0 1rem 0;
@@ -100,6 +99,14 @@ body{
     margin-bottom: 0.5rem;
 }
 
+.site-footer{
+    background-color: #333;
+    height: 6vh;
+}
+
+.profile-link{
+    width: 30px;
+}
 
 main{
     width: 98%;

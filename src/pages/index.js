@@ -4,10 +4,10 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 const IndexPage = () => (
   <Layout pageTitle="Home Page">
-    <p>I'm doing this by following a gatsby tutorial</p>
+    <p>This is a work in progress. Hang on.</p>
     <StaticImage 
-     alt="Silly girl, being silly."
-     src="../images/silly_girl.png" />
+     alt="This is my play room"
+     src="../images/gaming-room.jpg" />
   </Layout>
   
 )

@@ -9,9 +9,12 @@ import { container,
            siteTop, 
            topRight, 
            topLeft, 
-           topDisplace
+           topDisplace,
+           siteFooter,
+           profileLink
  } from './layout.module.css'
 import "@fontsource/baloo-bhaijaan-2/600.css"
+import { StaticImage } from 'gatsby-plugin-image'
 
 const Layout = ({pageTitle, children}) => {
   const data = useStaticQuery(graphql`query {
@@ -28,7 +31,7 @@ const Layout = ({pageTitle, children}) => {
       <div className={siteTop}>
         <div className={topRight}>
         <header className={siteTitle}>{data.site.siteMetadata.title}</header>
-        <nav>
+        <nav>        
           <ul className={navLinks}>
             <li className={navLinkItem}><Link to='/' className={navLinkText}>Home</Link></li>
             <li className={navLinkItem}><Link to='/blog' className={navLinkText}>Blog</Link></li>
@@ -43,6 +46,24 @@ const Layout = ({pageTitle, children}) => {
         <h1 className={heading}>{pageTitle}</h1>
         {children}
       </main>
+      <footer>
+        <div className={siteFooter}>
+        <ul className={navLinks}>
+            <li className={profileLink}><Link to='/'>
+              <StaticImage
+                alt="twitter profile"
+                src="../images/twitter-brands.svg"                
+            />
+              </Link></li>
+            <li className={profileLink}><Link to='/blog'>
+            <StaticImage
+                alt="twitter profile"
+                src="../images/github-brands.svg"                
+            />
+              </Link></li>                      
+          </ul>
+        </div>
+      </footer>
     </div>
   )
 }
