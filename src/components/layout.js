@@ -46,8 +46,17 @@ const Layout = ({pageTitle, children}) => {
         <h1 className={heading}>{pageTitle}</h1>
         {children}
       </main>
-      <footer>
+      <footer className='h-card'>
         <div className={siteFooter}>
+
+              <Link to='/' rel='me' className='u-url' >                
+                <div className={profileLink}>
+                  <strong>
+                    <span>©2021</span><br/>                
+                    <span className='p-name'>ExperimentalistBR</span>
+                  </strong>  
+                </div>
+              </Link>
         
               <Link to='https://twitter.com/MrBorgesIT' rel='me'>                
                 <div className={profileLink}>                  
