@@ -213,6 +213,7 @@ body{
     height: 60px;
     margin-top: auto;
     padding: 0 0.5rem;
+    border-top: 1px solid #8888;
 
 }
 
@@ -229,6 +230,7 @@ body{
 main{
     
     margin-bottom: 3rem;
+    padding: 0 0.4rem;
 }
 
 a{
