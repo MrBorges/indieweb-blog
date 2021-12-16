@@ -1,7 +1,7 @@
 import * as React from 'react'
 import Layout from '../../components/layout'
 import { graphql, Link } from 'gatsby'
-import { postTitle } from '../../components/layout.module.css'
+import { postTitle } from '../../components/layout.module.css'git 
 
 const blogPage = ({data}) =>{
     return(
