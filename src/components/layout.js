@@ -6,7 +6,7 @@ import { container,
            navLinkItem, 
            navLinkText, 
            siteTitle, 
-           siteTop, 
+           siteTop,   
            topRight, 
            topLeft, 
            topDisplace,
@@ -48,20 +48,24 @@ const Layout = ({pageTitle, children}) => {
       </main>
       <footer>
         <div className={siteFooter}>
-        <ul className={navLinks}>
-            <li className={profileLink}><Link to='/'>
-              <StaticImage
-                alt="twitter profile"
-                src="../images/twitter-brands.svg"                
-            />
-              </Link></li>
-            <li className={profileLink}><Link to='/blog'>
-            <StaticImage
-                alt="twitter profile"
-                src="../images/github-brands.svg"                
-            />
-              </Link></li>                      
-          </ul>
+        
+              <Link to='https://twitter.com/MrBorgesIT' rel='me'>                
+                <div className={profileLink}>                  
+                  <StaticImage
+                    alt="twitter profile"
+                    src="../images/twitter-brands.svg"                                    
+                />
+                </div>
+              </Link>
+            <Link to='https://github.com/MrBorges' rel='me'>
+              <div className={profileLink}>
+                <StaticImage
+                    alt="twitter profile"
+                    src="../images/github-brands.svg"                           
+                />              
+              </div>
+              </Link>                      
+          
         </div>
       </footer>
     </div>
